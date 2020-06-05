@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" href="fav.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>M.H</title>
+</head>
+
+<body>
+
+
+
+    <!-------------------------------------------Home------------------------------------------------->
+
+    <section id="home">
+
+        <div class="main-header">
+            <h1>
+                <span id="marj"><span>Marj</span> Hajyahya</span>
+                <p>Front-end web developer.</p>
+            </h1>
+            <a href="#about" class="scroll-down"></a>
+        </div>
+
+        <nav class="header">
+            <input type="checkbox" name="bar" id="bar">
+            <label for="bar" class="trigger"><i class="fa fa-bars"></i></label>
+            <ul class="main-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+
+        <div class="outer center">
+            <canvas id="star-canvas" height="100%" width="100%"></canvas>
+        </div>
+
+    </section>
+
+
+    <!-------------------------------------------MODAL MEETUP------------------------------------------------->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <video src="Meetup.mp4" controls></video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------MODAL swapi------------------------------------------------->
+    <div class="modal fade" id="swapi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <video src="swapi.mp4" controls></video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------MODAL CHART------------------------------------------------->
+    <div class="modal fade" id="chart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <video src="chart.mp4" controls></video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------about------------------------------------------------->
+    <div class="sky_container">
+        <section id="about">
+
+            <div id="aboutDiv">
+                <p>About</p>
+                <div class="underline"></div>
+            </div>
+
+
+
+            <div id="icons" data-delay=".5s">
+                <div class="intuitive">
+                    <i id="blueIcon" class="fas fa-bolt"></i>
+                    <h2>Intuitive</h2>
+                    <p class="icons_paragraphs">Strong preference for easy to <br> use, intuitive UX/UI. </p>
+                </div>
+                <div class="dynamic">
+                    <i id="blueIcon" class="fas fa-cog"></i>
+                    <h2>Dynamic</h2>
+                    <p class="icons_paragraphs">Websites don't have to be static,<br>I love making pages come to life.</p>
+                </div>
+                <div class="responsive">
+                    <i id="blueIcon" class="fas fa-laptop"><i id="phone"class="fas fa-mobile-alt"></i></i>
+                    <h2>Responsive</h2>
+                    <p class="icons_paragraphs">My layouts will work on any <br>device, big or small.</p>
+                </div>
+            </div>
+
+            <div class="image_skills" data-delay=".5s">
+                <img id="marjImage" src="Marj.jpg" alt="avatar">
+
+                <div class="skills" data-delay=".5s">
+
+                    <p>HTML</p>
+                    <span class="bar"></span>
+                    <p id="myBar" class="html">90</p>
+
+
+
+                    <p>CSS</p>
+                    <span class="bar"></span>
+                    <p id="myBar" class="css">80</p>
+
+
+
+                    <p>JavaScript</p>
+                    <span class="bar"></span>
+                    <p id="myBar" class="js">70</p>
+
+
+
+                    <p>Vue</p>
+                    <span class="bar"></span>
+                    <p id="myBar" class="vue">65</p>
+
+
+
+
+                    <p>Vuex</p>
+                    <span class="bar"></span>
+                    <p id="myBar" class="vuex">60</p>
+
+
+                    <p>Photoshop</p>
+                    <span class="bar"></span>
+                    <p id="myBar" class="photoshop">80</p>
+
+
+                    <p>3ds Max</p>
+                    <span class="bar"></span>
+                    <p id="myBar" class="max">50</p>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-------------------------------------------projects------------------------------------------------->
+        <section id="projects">
+            <div id="myprojectsDiv">
+                <p>My Projects</p>
+                <div class="underline"></div>
+            </div>
+
+            <div class="mainContainer ">
+
+                <section id="meetupy" class="card1" data-delay=".5s">
+                    <img src="meetup.png "></img>
+                    <div class="head1">
+                        <h3>Meetup</h3>
+                        <p>It's' a Meetup application, where the user can register to current meetup and also can make his own meetup. <br><br> Technologies: Front-end: Vue, Vuex and Vuetify. <br> Back-end: Firebase.</p>
+                        <hr>
+                        <div class="buttons">
+                            <a id="button" data-toggle="modal" data-target="#exampleModalCenter">Demo <i
+                                class="fas fa-play-circle"></i> </a> <a id="button" href="https://github.com/Marj-11/meetup" target="_blank ">Source code <i
+                                class="fas fa-code"></i></a></div>
+                    </div>
+                </section>
+                <section id="starwarsy" class="card1" data-delay="1s">
+                    <img src="swapi.png"></img>
+                    <div class="head1">
+                        <h3>Star Wars app</h3>
+                        <p>It's a Star Wars Application, You can search for characters and planets and get every detail about them. <br><br> Technologies: HTML, CSS, JavaScript and Vue</p>
+                        <hr><br>
+                        <div class="buttons">
+                            <a id="button" data-toggle="modal" data-target="#swapi">Demo <i
+                                class="fas fa-play-circle"></i> </a> <a id="button" href="https://github.com/Marj-11/swapi" target="_blank ">Source code <i
+                                class="fas fa-code"></i></a></div>
+                    </div>
+                </section>
+
+                <section id="charty" class="card1" data-delay=".5s">
+                    <img src="chart.png "></img>
+                    <div class="head1 ">
+                        <h3>Chart</h3>
+                        <p>
+                            It's a Chart application, where the user can upload CSV file to make a chart of his own Datasource and Campaign. <br><br> Technologies: Vue, Vuex and Vuetify.
+                        </p>
+                        <hr>
+                        <div class="buttons">
+                            <a id="button" data-toggle="modal" data-target="#chart">Demo <i class="fas fa-play-circle "></i>
+                        </a> <a id="button" href="https://github.com/Marj-11/chart" target="_blank">Source code <i
+                                class="fas fa-code "></i></a>
+                        </div>
+                    </div>
+                    <!-------- Modal --------->
+
+                </section>
+                <section id="foody" class="card1" data-delay=".5s">
+                    <img src="foody.png "></img>
+                    <div class="head1 ">
+                        <h3>Foody Restaurant</h3>
+                        <p>
+                            It's a commercial Restaurant Website.<br><br>Technologies: HTML and CSS.
+                        </p>
+                        <hr>
+                        <br>
+                        <div class="buttons">
+                            <a id="button" href="https://marj-11.github.io/Foody/ " target="_blank ">Demo <i
+                                class="fas fa-globe "></i></a> <a id="button" href="https://github.com/Marj-11/Foody" target="_blank">Source code <i class="fas fa-code "></i></a>
+                        </div>
+                    </div>
+                </section>
+                <section id="rocky" class="card1" data-delay="1s">
+                    <img src="rps.png "></img>
+                    <div class="head1 ">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>
+                            It's a game application, where the user and the Computer can play Rock Paper Scissors. <br><br>Technologies: HTML, CSS and JavaScript.
+                        </p>
+                        <hr>
+                        <div class="buttons">
+                            <a id="button" href="https://marj-11.github.io/Rock-paper-scissors/ " target="_blank ">Demo
+                            <i class="fas fa-globe "></i></a> <a id="button" href="https://github.com/Marj-11/Rock-paper-scissors " target="_blank
+                    ">Source code <i class="fas fa-code "></i></a>
+                        </div>
+                    </div>
+                </section>
+                <section id="maxy" class="card1" data-delay=".5s">
+                    <img src="room.jpg "></img>
+                    <div class="head1 ">
+                        <h3>3D Room</h3>
+                        <p>
+                            Simple room design. <br> Technologies: 3d's Max.
+                        </p>
+                        <hr>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+
+        <!-------------------------------------------contact--------------------------------------------------->
+
+        <section id="contact" data-delay=".5s">
+            <div id="contactDiv">
+                <p>Contact</p>
+                <div class="underline"></div>
+            </div>
+            <div id="contactDiv">
+                <p>Have a question or want to work together?</p>
+            </div>
+            <div id="contactDiv">
+                <p class="here">Here is my e-mail</p>
+            </div>
+            <div id="contactDiv">
+                <p><a class="email" href="mailto:marj.hajyahya@gmail.com">marj.hajyahya@gmail.com</a>
+            </div>
+        </section>
+        <footer>
+            <div class="footerIcons">
+                <a href="https://www.facebook.com/mark.eljarokov" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.linkedin.com/in/marj-hajyahya-73a728185/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/eljarokov/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>
+                <span class="white">Marj Hajyahya</span>&nbsp;<span class="blue">&copy;2019</span>
+            </p>
+        </footer>
+
+
+
+        <!---------------------------------------------------------------------------------------------->
+
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+
+
+
+
+    <script src="app.js ">
+    </script>
+</body>
+
+</html>
