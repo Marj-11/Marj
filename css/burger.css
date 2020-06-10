@@ -1,0 +1,58 @@
+@media (max-width: 720px) {
+    .main-menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        right: 0;
+        opacity: 1;
+        animation: anim .5s reverse;
+    }
+    @keyframes anim {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .main-menu>li {
+        float: none;
+    }
+    .trigger {
+        display: block;
+        cursor: pointer;
+    }
+    .trigger>i {
+        font-size: 30px;
+        color: white;
+        padding: 10px;
+    }
+    #bar:checked~.main-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(51, 51, 51);
+        height: 120px;
+        opacity: 0;
+        animation: anim .5s forwards;
+        -webkit-animation: anim .5s forwards;
+    }
+    #bar:checked~.trigger {
+        background-color: black;
+    }
+    .fixed-nav nav {
+        position: fixed;
+        top: 0;
+    }
+    .header {
+        height: 50px;
+        width: 100%;
+        background: rgb(0, 0, 0);
+        text-align: left;
+        z-index: 99;
+    }
+    html {
+        scroll-behavior: smooth;
+        width: 100%;
+    }
+}
