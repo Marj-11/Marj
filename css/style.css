@@ -367,6 +367,28 @@ nav ul li {
     animation-fill-mode: forwards;
 } */
 
+@keyframes bootcamps {
+    0% {
+        left: -400px;
+        opacity: 0;
+    }
+    100% {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes dieprimawonnen {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
 @keyframes meetupy {
     0% {
         left: -500px;
@@ -456,8 +478,15 @@ nav ul li {
     width: 1000px;
 }
 
-video {
-    width: 900px;
+.modal-content {
+    padding-top: 0;
+    padding-right: 0px;
+}
+
+iframe {
+    border: none;
+    width: 600px;
+    height: 380px;
 }
 
 
@@ -478,15 +507,17 @@ video {
     opacity: 0;
 }
 
-.head1>hr {
+.head1 hr {
     background-color: white;
     width: 80%;
 }
 
 .head1 {
     display: none;
+    font-size: 85%;
     position: absolute;
-    height: 300px;
+    height: 100%;
+    width: 90%;
     left: 20px;
     top: 10px;
 }
@@ -544,10 +575,8 @@ h2 {
 }
 
 #button {
-    display: inline-block;
     padding: 0.35em 1.2em;
     border: 0.1em solid #ffffff;
-    margin: 0px 50px 0 0px;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
@@ -574,9 +603,8 @@ h2 {
 }
 
 .buttons {
-    position: relative;
-    top: 0;
-    margin: -5px 40px 20px 40px;
+    display: flex;
+    justify-content: space-around;
 }
 
 

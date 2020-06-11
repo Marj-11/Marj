@@ -60,11 +60,7 @@
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-
-                <div class="modal-body">
-                    <video src="Meetup.mp4" controls></video>
-                </div>
-
+                <iframe src="https://www.youtube.com/embed/oFScrkfyFsY"> </iframe>
             </div>
         </div>
     </div>
@@ -72,30 +68,15 @@
     <div class="modal fade" id="swapi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-
-                <div class="modal-body">
-                    <video src="swapi.mp4" controls></video>
-                </div>
-
+                <iframe src="https://www.youtube.com/embed/xizMl9q-2Cc"> </iframe>
             </div>
         </div>
     </div>
     <!-------------------------------------------MODAL CHART------------------------------------------------->
-    <div class="modal fade" id="chart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
 
-                <div class="modal-body">
-                    <video src="chart.mp4" controls></video>
-                </div>
-
-            </div>
-        </div>
-    </div>
     <!-------------------------------------------about------------------------------------------------->
     <div class="sky_container">
         <section id="about">
-
             <div id="aboutDiv">
                 <p>About</p>
                 <div class="underline"></div>
@@ -156,7 +137,7 @@
                     </div>
                     <div class="icon">
                         <img src="icons/Mongobd.png"></img>
-                        <p>MongoBD</p>
+                        <p>MongoDB</p>
                     </div>
                     <div class="icon">
                         <img src="icons/Mysql.png"></img>
@@ -214,18 +195,51 @@
                 <div class="underline"></div>
             </div>
 
-            <div class="mainContainer ">
-
+            <div class="mainContainer">
+                <section id="bootcamps" class="card1" data-delay=".5s">
+                    <img src="assets/bootcamps.jpg"></img>
+                    <div class="head1">
+                        <h3>Devcamper</h3>
+                        <p>
+                            It's a Bootcamps application for web developers, where the user can sign in and create bootcamps and courses. <br> Technologies: <br> Frontend :Vue, Vuex, Nuxt and Vuetify. <br> Backend: Node.js and express
+                        </p>
+                        <hr>
+                        <div class="buttons">
+                            <a id="button" href="https://decamper-front.herokuapp.com/" target="_blank">Demo <i class="fas fa-globe"></i>
+                        </a> <a id="button" href="https://github.com/Marj-11/devcamper" target="_blank">Source code <i
+                                class="fas fa-code "></i></a>
+                        </div>
+                    </div>
+                </section>
+                <section id="dieprimawonnen" class="card1" data-delay=".5s">
+                    <img src="assets/dieprimawonnen.jpg"></img>
+                    <div class="head1">
+                        <h3>Die Prima Wonnen</h3>
+                        <p>
+                            Simple website for my friends. <br><br> Technologies: <br> HTML, CSS and Javascript
+                        </p>
+                        <hr>
+                        <div class="buttons">
+                            <a id="button" href="http://www.dieprimawonnen.at/" target="_blank">Demo <i class="fas fa-globe"></i>
+                        </a>
+                            <a id="button" href="https://github.com/Marj-11/prima" target="_blank">Source code <i
+                                class="fas fa-code "></i></a>
+                        </div>
+                    </div>
+                </section>
                 <section id="meetupy" class="card1" data-delay=".5s">
                     <img src="assets/meetup.png "></img>
                     <div class="head1">
                         <h3>Meetup</h3>
-                        <p>It's' a Meetup application, where the user can register to current meetup and also can make his own meetup. <br><br> Technologies: Front-end: Vue, Vuex and Vuetify. <br> Back-end: Firebase.</p>
+                        <p>It's' a Meetup application, where the user can register to current meetup and also can make his own meetup. <br><br> Technologies: Front-end: Vue, Vuex and Vuetify. <br> Backend: Firebase.</p>
                         <hr>
                         <div class="buttons">
                             <a id="button" data-toggle="modal" data-target="#exampleModalCenter">Demo <i
-                                class="fas fa-play-circle"></i> </a> <a id="button" href="https://github.com/Marj-11/meetup" target="_blank ">Source code <i
-                                class="fas fa-code"></i></a></div>
+                                class="fas fa-play-circle"></i>
+                             </a>
+                            <a id="button" href="https://github.com/Marj-11/meetup" target="_blank ">Source code <i
+                                class="fas fa-code"></i></a>
+                        </div>
                     </div>
                 </section>
                 <section id="starwarsy" class="card1" data-delay="1s">
@@ -243,7 +257,7 @@
 
                 <section id="charty" class="card1" data-delay=".5s">
                     <img src="assets/chart.png "></img>
-                    <div class="head1 ">
+                    <div class="head1">
                         <h3>Chart</h3>
                         <p>
                             It's a Chart application, where the user can upload CSV file to make a chart of his own Datasource and Campaign. <br><br> Technologies: Vue, Vuex and Vuetify.
@@ -255,9 +269,8 @@
                                 class="fas fa-code "></i></a>
                         </div>
                     </div>
-                    <!-------- Modal --------->
-
                 </section>
+                <!-------- Modal --------->
                 <section id="foody" class="card1" data-delay=".5s">
                     <img src="assets/foody.png "></img>
                     <div class="head1 ">
@@ -269,7 +282,7 @@
                         <br>
                         <div class="buttons">
                             <a id="button" href="https://marj-11.github.io/Foody/ " target="_blank ">Demo <i
-                                class="fas fa-globe "></i></a> <a id="button" href="https://github.com/Marj-11/Foody" target="_blank">Source code <i class="fas fa-code "></i></a>
+                                class="fas fa-globe"></i></a> <a id="button" href="https://github.com/Marj-11/Foody" target="_blank">Source code <i class="fas fa-code "></i></a>
                         </div>
                     </div>
                 </section>
