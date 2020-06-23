@@ -311,13 +311,13 @@ nav ul li {
 
 .icon {
     width: 25%;
-    height: 32%;
     padding: 10px;
     align-self: flex-end;
 }
 
 .icon>img {
-    object-fit: scale-down;
+    width: 100%;
+    /* object-fit: scale-down; */
 }
 
 .h4p {
