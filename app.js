@@ -5,7 +5,7 @@ document.onreadystatechange = function() {
         document.getElementById('contents').style.visibility = 'visible';
     } else if (state == 'complete') {
         document.getElementById('interactive');
-        document.getElementById('body').style.visibility = 'hidden';
+        document.getElementsByName('body').style.visibility = 'hidden';
         document.getElementById('contents').style.visibility = 'hidin';
     }
 };
