@@ -3,10 +3,11 @@ document.onreadystatechange = function() {
     var state = document.readyState;
     if (state == 'interactive') {
         document.getElementById('contents').style.visibility = 'visible';
-    } else if (state == 'complete') {
-        document.getElementById('interactive');
         document.getElementsByName('body').style.visibility = 'hidden';
-        document.getElementById('contents').style.visibility = 'hidin';
+    } else if (state == 'complete') {
+        document.getElementsByName('body').style.visibility = 'visible';
+
+        document.getElementById('contents').style.visibility = 'hidden';
     }
 };
 //  Time----------------------------------
