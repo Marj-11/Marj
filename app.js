@@ -1,16 +1,14 @@
 //  Loader----------------------------------
-document.body.setAttribute('class', 'noscroll');
-
-document.getElementById('overlay').style.display = 'block';
-document.getElementById('spinner').style.display = 'block';
-
-window.onload = function() {
-    document.getElementById('spinner').style.display = 'none';
-    document.getElementById('overlay').style.display = 'none';
-
-    document.body.className = document.body.className.replace(/\bnoscroll\b/, '');
+document.onreadystatechange = function() {
+    var state = document.readyState;
+    if (state == 'interactive') {
+        document.getElementById('contents').style.visibility = 'hidden';
+    } else if (state == 'complete') {
+        document.getElementById('interactive');
+        document.getElementById('load').style.visibility = 'hidden';
+        document.getElementById('contents').style.visibility = 'visible';
+    }
 };
-
 //  Time----------------------------------
 const d = new Date();
 const y = d.getFullYear();
