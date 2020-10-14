@@ -2,12 +2,11 @@
 document.onreadystatechange = function() {
     var state = document.readyState;
     if (state == 'interactive') {
-        document.getElementById('contents').style.visibility = 'visible';
-        document.getElementsByName('body').style.visibility = 'hidden';
+        document.getElementById('contents').style.display = 'block';
+        document.getElementsByName('body').style.display = 'none';
     } else if (state == 'complete') {
-        document.getElementsByName('body').style.visibility = 'visible';
-
-        document.getElementById('contents').style.visibility = 'hidden';
+        document.getElementById('contents').style.display = 'none';
+        document.getElementsByName('body').style.display = 'block';
     }
 };
 //  Time----------------------------------
