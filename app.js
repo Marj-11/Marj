@@ -1,7 +1,7 @@
 //  Loader----------------------------------
 document.onreadystatechange = function() {
     if (document.readyState !== 'complete') {
-        document.getElementsByTagName('body').style.visibility = 'hidden';
+        document.querySelector('body').style.visibility = 'hidden';
         document.querySelector('#loader').style.visibility = 'visible';
     } else {
         document.querySelector('#loader').style.display = 'none';
