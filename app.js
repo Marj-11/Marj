@@ -24,11 +24,25 @@ var swiper = new Swiper('.swiper-container', {
 });
 // -----------------------------------------------------------
 
-// Hamburger----------------------------------
+// Hamburger---and---Modal----------------------------
 const burger = document.querySelector('.icon');
+const modal = document.getElementById('myModal');
 burger.addEventListener('click', function() {
     burger.classList.toggle('active');
+    if (burger.classList.contains('active')) {
+        modal.style.display = 'block';
+    } else {
+        modal.style.display = 'none';
+    }
 });
+
+window.onclick = function(event) {
+    if (event.target !== burger) {
+        modal.style.display = 'none';
+        burger.classList.remove('active');
+    }
+};
+
 // -----------------------------------------------------------
 
 let mainNavLinks = document.querySelectorAll('nav ul li a');
