@@ -1,0 +1,22 @@
+%btn {
+    padding: 15px;
+    border: 1px solid #ffffff;
+    color: white;
+    background: transparent;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: all 0.2s;
+    &:hover {
+        background: white;
+        color: #000000;
+        cursor: pointer;
+    }
+    &:active {
+        border: none;
+        background-color: rgb(189, 189, 189);
+        cursor: pointer;
+    }
+}

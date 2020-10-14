@@ -5,362 +5,183 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Lato:wght@400;900&family=Overpass:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/fav.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-    <link rel="stylesheet" href="css/burger.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="main-css/style.css" />
 
-    <title>M.H</title>
+    <title>Marj</title>
 </head>
 
 <body>
-
-
-
-    <!-------------------------------------------Home------------------------------------------------->
-
-    <section id="home">
-
-        <div class="main-header">
-            <h1>
-                <span id="marj"><span>Marj</span> Hajyahya</span>
-                <p>Front-end web developer.</p>
-            </h1>
-            <a href="#about" class="scroll-down"></a>
-        </div>
-
-        <nav class="header">
-            <input type="checkbox" name="bar" id="bar">
-            <label for="bar" class="trigger"><i class="fa fa-bars"></i></label>
-            <ul class="main-menu">
+    <!-------------------------------------------Header------------------------------------------------->
+    <header>
+        <nav>
+            <!-- Hamburger -->
+            <div class="icon">
+                <div class="hamburger"></div>
+            </div>
+            <!-- ------------- -->
+            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#technologies">Technologies</a></li>
                 <li><a href="#projects">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
         </nav>
+    </header>
+    <!-------------------------------------------Home------------------------------------------------->
 
-
-        <div class="outer center">
-            <canvas id="star-canvas" height="100%" width="100%"></canvas>
+    <section id="home">
+        <div class="main-header">
+            <h1>
+                <span>Marj Hajyahya</span>
+                <p>Front-end web developer.</p>
+            </h1>
+            <h4>
+                <span>Hey</span>, i am a Frontend web developer, located in Vienna.
+                <br /> I have serious passion for UI effects, animations and creating professional Applications and dynamic user experiences. <br />
+                <a href="#contact">Let's make something special.</a>
+            </h4>
         </div>
-
     </section>
 
-
-    <!-------------------------------------------MODAL MEETUP------------------------------------------------->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <iframe src="https://www.youtube.com/embed/oFScrkfyFsY"> </iframe>
-            </div>
-        </div>
-    </div>
-    <!-------------------------------------------MODAL swapi------------------------------------------------->
-    <div class="modal fade" id="swapi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <iframe src="https://www.youtube.com/embed/xizMl9q-2Cc"> </iframe>
-            </div>
-        </div>
-    </div>
-    <!-------------------------------------------MODAL CHART------------------------------------------------->
-
     <!-------------------------------------------about------------------------------------------------->
-    <div class="sky_container">
-        <section id="about">
-            <div id="aboutDiv">
-                <p>About</p>
-                <div class="underline"></div>
+
+    <section id="about">
+        <p>About</p>
+        <div class="icons">
+            <div>
+                <i class="fas fa-bolt"></i>
+                <h2>Intuitive</h2>
+                <p>
+                    Strong preference for easy to <br /> use, intuitive UX/UI.
+                </p>
             </div>
-
-
-
-            <div id="icons" data-delay=".5s">
-                <div class="intuitive">
-                    <i id="blueIcon" class="fas fa-bolt"></i>
-                    <h2>Intuitive</h2>
-                    <p class="icons_paragraphs">Strong preference for easy to <br> use, intuitive UX/UI. </p>
-                </div>
-                <div class="dynamic">
-                    <i id="blueIcon" class="fas fa-cog"></i>
-                    <h2>Dynamic</h2>
-                    <p class="icons_paragraphs">Websites don't have to be static,<br>I love making pages come to life.</p>
-                </div>
-                <div class="responsive">
-                    <i id="blueIcon" class="fas fa-laptop"><i id="phone"class="fas fa-mobile-alt"></i></i>
-                    <h2>Responsive</h2>
-                    <p class="icons_paragraphs">My layouts will work on any <br>device, big or small.</p>
-                </div>
+            <div>
+                <i class="fas fa-cog"></i>
+                <h2>Dynamic</h2>
+                <p>
+                    Websites don't have to be static,<br />I love making pages come to life.
+                </p>
             </div>
+            <div>
+                <i class="fas fa-laptop"><i class="fas fa-mobile-alt"></i></i>
+                <h2>Responsive</h2>
+                <p>My layouts will work on any <br />device, big or small.</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="image_skills" data-delay=".5s">
-                <div class="image_box">
-                    <img id="marjImage" src="assets/Marj.jpg" alt="avatar">
-                    <h4 class="white">Hey, i am a Front end web developer, located in Vienna. <br> Passionate to learn more to create highly professional Applications and user experiences. <br> <a href="#contact" class="blue">Let's make something special.</a></h4>
+    <!-------------------------------------------Technologies------------------------------------------------->
+
+    <section id="technologies">
+        <p>Technologies</p>
+
+        <div class="logos">
+            <img class="image" src="icons/html.png" alt="html" />
+            <img class="image" src="icons/css.png" alt="css" />
+            <img class="image" src="icons/sass.png" alt="sass" />
+            <img class="image" src="icons/javascript.png" alt="javascript" />
+            <img class="image" src="icons/vuejs.png" alt="vuejs" />
+            <img class="image" src="icons/nuxt-square.svg" alt="nuxt-square" />
+            <img class="image" src="icons/vuetify.png" alt="vuetify" />
+            <img class="image" src="icons/nodejs.png" alt="nodejs" />
+            <img class="image" src="icons/mongodb.png" alt="mongodb" />
+            <img class="image" src="icons/mysql.png" alt="mysql" />
+        </div>
+    </section>
+
+    <!-------------------------------------------projects------------------------------------------------->
+    <section id="projects">
+        <p>My Projects</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(./assets/bootcamps.jpg)">
+                    <h3>Devcamper</h3>
+                    <p>Vue, Nuxt, Vuetify, Node.js and express</p>
+                    <button class="designed_btn">LEARN MORE</button>
+                </div>
+                <div class="swiper-slide" style="background-image: url(./assets/dieprimawonnen.jpg)">
+                    <h3>Die Prima Wonnen</h3>
+                    <p>HTML, CSS and Javascript</p>
+                    <button class="designed_btn">LEARN MORE</button>
+                </div>
+                <div class="swiper-slide" style="background-image: url(./assets/meetup.png)">
+                    <h3>Meetup</h3>
+                    <p>Vue, Vuex, Vuetify and Firebase.</p>
+                    <button class="designed_btn">LEARN MORE</button>
+                </div>
+                <div class="swiper-slide" style="background-image: url(./assets/swapi.png)">
+                    <h3>Star Wars app</h3>
+                    <p>JavaScript and Vue</p>
+                    <button class="designed_btn">LEARN MORE</button>
                 </div>
 
+                <div class="swiper-slide" style="background-image: url(./assets/chart.png)">
+                    <h3>Chart</h3>
+                    <p>Vue, Vuex and Vuetify.</p>
+                    <button class="designed_btn">LEARN MORE</button>
+                </div>
 
-                <div class="skills" data-delay=".5s">
-                    <div class="icon">
-                        <img src="icons/css.png"></img>
-                        <p>CSS</p>
-                    </div>
-                    <div class="icon">
-                        <img src="icons/Javascript.png"></img>
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="icon">
-                        <img src="icons/vuejs.png"></img>
-                        <p>Vue</p>
-                    </div>
-                    <div class="icon">
-                        <img src="icons/nuxt-square.svg"></img>
-                        <h5>Nuxt</h5>
-                    </div>
-                    <div class="icon">
-                        <img src="icons/vuetify-logo-light.png"></img>
-                        <h5>Vuetify</h5>
-                    </div>
-                    <div class="icon">
-                        <img src="icons/node.js.png"></img>
-                        <p>Node.js</p>
-                    </div>
-                    <div class="icon">
-                        <img src="icons/Mongobd.png"></img>
-                        <p>MongoDB</p>
-                    </div>
-                    <div class="icon">
-                        <img src="icons/Mysql.png"></img>
-                        <p>MySQL</p>
-                    </div>
+                <div class="swiper-slide" style="background-image: url(./assets/foody.png)">
+                    <h3>Foody Restaurant</h3>
+                    <p>HTML and CSS.</p>
+                    <button class="designed_btn">LEARN MORE</button>
+                </div>
+                <div class="swiper-slide" style="background-image: url(./assets/rps.png)">
+                    <h3>Rock Paper Scissors</h3>
+                    <p>JavaScript.</p>
+                    <button class="designed_btn">LEARN MORE</button>
+                </div>
 
-                    <!-- <p>HTML</p>
-                    <span class="bar"></span>
-                    <p id="myBar" class="html">90</p>
-
-
-
-                    <p>CSS</p>
-                    <span class="bar"></span>
-                    <p id="myBar" class="css">80</p>
-
-
-
-                    <p>JavaScript</p>
-                    <span class="bar"></span>
-                    <p id="myBar" class="js">70</p>
-
-
-
-                    <p>Vue</p>
-                    <span class="bar"></span>
-                    <p id="myBar" class="vue">65</p>
-
-
-
-
-                    <p>Vuex</p>
-                    <span class="bar"></span>
-                    <p id="myBar" class="vuex">60</p>
-
-
-                    <p>Photoshop</p>
-                    <span class="bar"></span>
-                    <p id="myBar" class="photoshop">80</p>
-
-
-                    <p>3ds Max</p>
-                    <span class="bar"></span>
-                    <p id="myBar" class="max">50</p> -->
-
+                <div class="swiper-slide" style="background-image: url(./assets/room.jpg)">
+                    <h3>3D Room</h3>
+                    <p>3d's Max.</p>
+                    <button class="designed_btn">LEARN MORE</button>
                 </div>
             </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
-        </section>
+    <!-------------------------------------------contact--------------------------------------------------->
 
-        <!-------------------------------------------projects------------------------------------------------->
-        <section id="projects">
-            <div id="myprojectsDiv">
-                <p>My Projects</p>
-                <div class="underline"></div>
-            </div>
+    <section id="contact">
+        <p>Contact</p>
 
-            <div class="mainContainer">
-                <section id="bootcamps" class="card1" data-delay=".5s">
-                    <img src="assets/bootcamps.jpg"></img>
-                    <div class="head1">
-                        <h3>Devcamper</h3>
-                        <p>
-                            It's a Bootcamps application for web developers, where the user can sign in and create bootcamps and courses. <br> Technologies: <br> Frontend :Vue, Vuex, Nuxt and Vuetify. <br> Backend: Node.js and express
-                        </p>
-                        <hr>
-                        <div class="buttons">
-                            <a id="button" href="https://devcamper-frontend.herokuapp.com/" target="_blank">Demo <i class="fas fa-globe"></i>
-                        </a>
-                        </div>
-                    </div>
-                </section>
-                <section id="dieprimawonnen" class="card1" data-delay=".5s">
-                    <img src="assets/dieprimawonnen.jpg"></img>
-                    <div class="head1">
-                        <h3>Die Prima Wonnen</h3>
-                        <p>
-                            Simple website for my friends. <br><br> Technologies: <br> HTML, CSS and Javascript
-                        </p>
-                        <hr>
-                        <div class="buttons">
-                            <a id="button" href="http://www.dieprimawonnen.at/" target="_blank">Demo <i class="fas fa-globe"></i>
-                        </a>
-                            <a id="button" href="https://github.com/Marj-11/prima" target="_blank">Source code <i
-                                class="fas fa-code "></i></a>
-                        </div>
-                    </div>
-                </section>
-                <section id="meetupy" class="card1" data-delay=".5s">
-                    <img src="assets/meetup.png "></img>
-                    <div class="head1">
-                        <h3>Meetup</h3>
-                        <p>It's' a Meetup application, where the user can register to current meetup and also can make his own meetup. <br><br> Technologies: Front-end: Vue, Vuex and Vuetify. <br> Backend: Firebase.</p>
-                        <hr>
-                        <div class="buttons">
-                            <a id="button" data-toggle="modal" data-target="#exampleModalCenter">Demo <i
-                                class="fas fa-play-circle"></i>
-                             </a>
-                            <a id="button" href="https://github.com/Marj-11/meetup" target="_blank ">Source code <i
-                                class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </section>
-                <section id="starwarsy" class="card1" data-delay="1s">
-                    <img src="assets/swapi.png"></img>
-                    <div class="head1">
-                        <h3>Star Wars app</h3>
-                        <p>It's a Star Wars Application, You can search for characters and planets and get every detail about them. <br><br> Technologies: HTML, CSS, JavaScript and Vue</p>
-                        <hr><br>
-                        <div class="buttons">
-                            <a id="button" data-toggle="modal" data-target="#swapi">Demo <i
-                                class="fas fa-play-circle"></i> </a> <a id="button" href="https://github.com/Marj-11/swapi" target="_blank ">Source code <i
-                                class="fas fa-code"></i></a></div>
-                    </div>
-                </section>
+        <p>Have a question or want to work together?</p>
+        <p>Here is my e-mail</p>
 
-                <section id="charty" class="card1" data-delay=".5s">
-                    <img src="assets/chart.png "></img>
-                    <div class="head1">
-                        <h3>Chart</h3>
-                        <p>
-                            It's a Chart application, where the user can upload CSV file to make a chart of his own Datasource and Campaign. <br><br> Technologies: Vue, Vuex and Vuetify.
-                        </p>
-                        <hr>
-                        <div class="buttons">
-                            <a id="button" data-toggle="modal" data-target="#chart">Demo <i class="fas fa-play-circle "></i>
-                        </a> <a id="button" href="https://github.com/Marj-11/chart" target="_blank">Source code <i
-                                class="fas fa-code "></i></a>
-                        </div>
-                    </div>
-                </section>
-                <!-------- Modal --------->
-                <section id="foody" class="card1" data-delay=".5s">
-                    <img src="assets/foody.png "></img>
-                    <div class="head1 ">
-                        <h3>Foody Restaurant</h3>
-                        <p>
-                            It's a commercial Restaurant Website.<br><br>Technologies: HTML and CSS.
-                        </p>
-                        <hr>
-                        <br>
-                        <div class="buttons">
-                            <a id="button" href="https://marj-11.github.io/Foody/ " target="_blank ">Demo <i
-                                class="fas fa-globe"></i></a> <a id="button" href="https://github.com/Marj-11/Foody" target="_blank">Source code <i class="fas fa-code "></i></a>
-                        </div>
-                    </div>
-                </section>
-                <section id="rocky" class="card1" data-delay="1s">
-                    <img src="assets/rps.png "></img>
-                    <div class="head1 ">
-                        <h3>Rock Paper Scissors</h3>
-                        <p>
-                            It's a game application, where the user and the Computer can play Rock Paper Scissors. <br><br>Technologies: HTML, CSS and JavaScript.
-                        </p>
-                        <hr>
-                        <div class="buttons">
-                            <a id="button" href="https://marj-11.github.io/Rock-paper-scissors/ " target="_blank ">Demo
-                            <i class="fas fa-globe "></i></a> <a id="button" href="https://github.com/Marj-11/Rock-paper-scissors " target="_blank
-                    ">Source code <i class="fas fa-code "></i></a>
-                        </div>
-                    </div>
-                </section>
-                <section id="maxy" class="card1" data-delay=".5s">
-                    <img src="assets/room.jpg "></img>
-                    <div class="head1 ">
-                        <h3>3D Room</h3>
-                        <p>
-                            Simple room design. <br> Technologies: 3d's Max.
-                        </p>
-                        <hr>
-                    </div>
-                </section>
+        <a href="mailto:marj.hajyahya@gmail.com">marj.hajyahya@gmail.com</a>
+        <br />
+        <a href="assets/MARJ HAJYAHYA C.V Deutsch.pdf" download>Download my C.V</a
+      >
+    </section>
 
-            </div>
-        </section>
-
-
-        <!-------------------------------------------contact--------------------------------------------------->
-
-        <section id="contact" data-delay=".5s">
-            <div id="contactDiv">
-                <p>Contact</p>
-                <div class="underline"></div>
-            </div>
-            <div id="contactDiv">
-                <p>Have a question or want to work together?</p>
-            </div>
-            <div id="contactDiv">
-                <p class="here">Here is my e-mail</p>
-            </div>
-            <div id="contactDiv">
-                <p><a class="email" href="mailto:marj.hajyahya@gmail.com">marj.hajyahya@gmail.com</a></p>
-                <p><a class="cv" href="assets/MARJ HAJYAHYA C.V Deutsch.pdf" download>Download my C.V</a></p>
-            </div>
-        </section>
-        <footer>
-            <div class="footerIcons">
-                <a href="https://www.facebook.com/mark.eljarokov" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.linkedin.com/in/marj-hajyahya-73a728185/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/eljarokov/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>
-                <span class="white">Marj Hajyahya</span>&nbsp;<span class="blue">&copy;2020</span>
-            </p>
+    <footer>
+      <div class="footer_icons">
+        <a href="https://www.facebook.com/mark.eljarokov" target="_blank"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/marj-hajyahya-73a728185/" target="_blank"><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/eljarokov/" target="_blank"><i class="fab fa-instagram"></i
+        ></a>
+        </div>
+        <div>
+            <span>Marj Hajyahya</span>&nbsp;
+            <p id="date"></p>
+        </div>
         </footer>
 
-
-
         <!---------------------------------------------------------------------------------------------->
-
-
-
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
-
-
-
-
-    <script src="js/app.js ">
-    </script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="app.js "></script>
 </body>
 
 </html>
