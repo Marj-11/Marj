@@ -33,7 +33,7 @@
         font-size: 40px;
         color: black;
         text-transform: uppercase;
-        animation: waviy 1s infinite;
+        animation: waviy 2s infinite;
         animation-delay: calc(.1s * var(--i))
     }
     
@@ -44,7 +44,7 @@
             transform: translateY(0)
         }
         20% {
-            transform: translateY(-20px)
+            transform: translateY(-13px)
         }
     }
     

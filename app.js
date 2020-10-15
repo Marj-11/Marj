@@ -5,8 +5,8 @@ document.onreadystatechange = function() {
         document.getElementsByClassName('container')[0].style.display = 'none';
         document.getElementsByClassName('waviy')[0].style.display = 'block';
     } else if (state == 'complete') {
-        document.getElementsByClassName('container')[0].style.display = 'block';
-        document.getElementsByClassName('waviy')[0].style.display = 'none';
+        document.getElementsByClassName('container')[0].style.display = 'none';
+        document.getElementsByClassName('waviy')[0].style.display = 'block';
     }
 };
 //  Time----------------------------------
