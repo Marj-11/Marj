@@ -2,11 +2,11 @@
 document.onreadystatechange = function() {
     var state = document.readyState;
     if (state == 'interactive') {
-        document.getElementsByClassName('b')[0].style.display = 'none';
-        document.getElementById('contents').style.display = 'block';
+        document.getElementsByClassName('container')[0].style.display = 'none';
+        document.getElementsByClassName('waviy')[0].style.display = 'block';
     } else if (state == 'complete') {
-        document.getElementsByClassName('b')[0].style.display = 'block';
-        document.getElementById('contents').style.display = 'none';
+        document.getElementsByClassName('container')[0].style.display = 'block';
+        document.getElementsByClassName('waviy')[0].style.display = 'none';
     }
 };
 //  Time----------------------------------
