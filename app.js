@@ -1,14 +1,14 @@
 //  Loader----------------------------------
-document.onreadystatechange = function() {
-    var state = document.readyState;
-    if (state == 'interactive') {
-        document.getElementsByClassName('container')[0].style.display = 'none';
-        document.getElementsByClassName('waviy')[0].style.display = 'block';
-    } else if (state == 'complete') {
-        document.getElementsByClassName('container')[0].style.display = 'none';
-        document.getElementsByClassName('waviy')[0].style.display = 'block';
-    }
-};
+// document.onreadystatechange = function() {
+//     var state = document.readyState;
+//     if (state == 'interactive') {
+//         document.getElementsByClassName('container')[0].style.display = 'none';
+//         document.getElementsByClassName('waviy')[0].style.display = 'block';
+//     } else if (state == 'complete') {
+//         document.getElementsByClassName('container')[0].style.display = 'none';
+//         document.getElementsByClassName('waviy')[0].style.display = 'block';
+//     }
+// };
 //  Time----------------------------------
 const d = new Date();
 const y = d.getFullYear();

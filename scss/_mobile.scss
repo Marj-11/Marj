@@ -1,0 +1,27 @@
+    @media(min-width: 960px) {
+        .icon {
+            display: none;
+        }
+        nav {
+            ul {
+                z-index: 10000;
+                display: block;
+                position: fixed;
+                border-bottom: rgb(255, 255, 255) .5px solid;
+                top: 0;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                height: 60px;
+                backdrop-filter: saturate(150%) blur(8px);
+                a {
+                    color: rgb(0, 0, 0);
+                    transition: .4s ease;
+                    &:hover {
+                        color: white;
+                        transition: .4s ease;
+                    }
+                }
+            }
+        }
+    }
